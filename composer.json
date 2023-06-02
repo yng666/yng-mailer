@@ -1,0 +1,35 @@
+{
+	"name": "yng/yng-mailer",
+	"description": "📧 YNG Mail: Easy and fast PHP email creation and transfer library, supporting text and HTML compatibility.",
+	"keywords": ["yng", "mail", "mailer", "smtp", "mime"],
+	"license": "Apache-2.0",
+	"authors": [
+		{
+			"name": "YNG",
+			"email": "840638148@qq.com"
+		}
+	],
+	"require": {
+		"php": ">=5.5.0",
+        "ext-ctype": "*",
+        "ext-filter": "*",
+        "ext-hash": "*"
+	},
+	"suggest": {
+		"ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
+        "ext-openssl": "Needed for secure SMTP sending and DKIM signing",
+        "greew/oauth2-azure-provider": "Needed for Microsoft Azure XOAUTH2 authentication",
+        "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+        "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+        "psr/log": "For optional PSR-3 debug logging",
+        "thenetworg/oauth2-azure": "Needed for Microsoft XOAUTH2 authentication",
+        "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
+	},
+	"autoload": {
+		"psr-4": {
+            "Yng\\Mailer\\": "src/"
+        }
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
